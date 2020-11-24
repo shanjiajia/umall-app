@@ -1,17 +1,28 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
 
+import App from './App';
+
+//1.assets 
+import "./assets/css/reset.css"
+import "./assets/js/rem"
+
+//2.components 公共组件
+
+// 3.pages 路由组件
+
+// 4.filters 过滤器
+
+// 5.utils/http.js ajax请求
+
+// 6.store 
+
+// 7.UI 框架
+
+// 8.stylus 样式
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <App />,
   document.getElementById('root')
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+
