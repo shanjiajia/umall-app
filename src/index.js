@@ -20,8 +20,11 @@ import "./assets/js/rem"
 // 7.UI 框架
 
 // 8.stylus 样式
+import {HashRouter} from 'react-router-dom';
 ReactDOM.render(
-  <App />,
+  <HashRouter>
+    <App />
+  </HashRouter>,
   document.getElementById('root')
 );
 

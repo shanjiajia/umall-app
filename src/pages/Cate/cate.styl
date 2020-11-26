@@ -1,0 +1,39 @@
+@import('../../stylus/index.styl');
+.cate{
+    display flex
+    .cate-left{
+        width 30vw
+        text-align center
+        flex-shrink 0
+        background pink 
+        li{
+           padding $margin 0
+           font-size $h2
+        }
+        .select{
+            color $primary
+        }
+    }
+    .cate-right{
+        flex 1
+        display flex
+        flex-wrap wrap
+        li{
+            border $borderwidth solid blue
+            border-radius $margin*2
+            margin $margin 0 0 $margin
+            img{
+                width 2rem
+                height 2rem
+                border-radius $margin*2
+            }
+            p{
+                text-align center
+                background blue
+                color $font-fff
+                border-radius 0 0 $margin*2 $margin*2
+                line-height headerHeight
+            }
+        }
+    }
+}

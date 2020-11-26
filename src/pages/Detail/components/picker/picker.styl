@@ -1,0 +1,54 @@
+@import('../../../../stylus/index.styl')
+.picker{
+    width: 100vw 
+    height: 100vh
+    position fixed
+    left 0
+    bottom: 0
+    .con{
+        position fixed
+        left 0
+        bottom: 0
+        width: 100vw 
+        height: 60vh
+        overflow-y: auto
+        background: rgba(0,0,0,.5)
+        li{
+           margin-top $margin 
+           margin-left $margin
+        }
+        .firstli{
+            display flex
+            div{
+                border 0.01rem solid red
+                width 2rem
+                height 2rem
+                img{
+                    width 100%
+                    height 100%
+                }
+            }
+            h1{
+                margin-left $margin
+                font-weight normal
+            }
+        }
+        .secondli{
+            
+            div{
+                margin-top $margin
+                span{
+                    display inline-block
+                    padding $padding
+                    border $borderwidth solid $font-color1
+                    border-radius $padding
+                    margin-left $margin
+                }
+                .select{
+                    border $borderwidth solid $primary
+                    color $primary
+                }
+            }
+        }
+    }
+}

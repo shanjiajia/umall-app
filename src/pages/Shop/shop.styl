@@ -1,0 +1,70 @@
+@import('../../stylus/index.styl')
+.shop
+    ul{
+        width 7.2rem
+        overflow hidden
+        background pink
+        li{
+            width  9rem
+            display  flex
+            justify-content space-between
+            background yellow
+            align-items center
+            padding-left $padding
+            .firstD{
+                img{
+                    width 0.3rem
+                    height 0.3rem
+                }
+            }
+            .img{
+                img{
+                    width 1rem
+                    height 1rem
+                }
+            }
+            .secondD{
+                p{
+                    margin $padding
+                    height 0.4rem
+                    span{
+                        padding $padding $margin
+                        border $borderwidth solid $font-color1
+                        border-right none
+                    }
+                    span:last-child{
+                        border-right $borderwidth solid $font-color1
+                    }
+                }
+            }
+            .delD{
+                width 1.8rem
+                background $primary
+                color $font-fff
+                text-align center
+                line-height 1.12rem
+            }
+            
+        }
+    }
+    .footer
+        width: 100vw 
+        height: $footerHeight 
+        position fixed 
+        background: $font-fff 
+        left 0 
+        bottom: $footerHeight 
+        border-top: $borderWidth solid $font-color3
+        box-sizing: border-box
+        img 
+            width: 0.3rem
+            height: 0.3rem
+        .quanxuan 
+            float left
+            margin 0 $margin
+        .edit 
+            float left 
+            margin 0 $margin
+        .price 
+            float left
+            margin 0 $margin

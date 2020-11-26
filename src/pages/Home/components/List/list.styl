@@ -1,0 +1,41 @@
+@import('../../../../stylus/index.styl')
+.list{
+    .list-bigbox{
+        margin $margin
+        overflow hidden
+        display block
+        .img{
+            width 1.5rem
+            height 1.5rem
+            float left
+            .picture{
+                width 1.5rem
+                height 1.5rem
+            }
+        }
+        .right{
+            float left
+            margin-left  $margin
+            h3{
+                margin-top $padding
+                font-size $h3
+            }
+            p{
+                margin-top $padding
+                color $primary
+            }
+            .list-click{
+                margin-top $padding
+                .active1{
+                    display inline-block
+                    padding $padding
+                    color $font-fff
+                    background $primary
+                    border-radius $padding
+                }
+            }
+            
+        }
+    }
+    
+}
