@@ -25,10 +25,10 @@ export default class Register extends Component {
         })
     }
     toLogin() {
-        console.log(this.state.user)
         reqRegister(this.state.user).then(res=>{
             if(res.data.code===200){
                 successAlert(res.data.msg)
+                this.props.history.push('/login')
             }
             
         })
@@ -45,7 +45,7 @@ export default class Register extends Component {
                             <li className='li'>昵&nbsp;&nbsp;&nbsp;称：<input type="text" onChange={(e) => this.changeUser(e, 'nickname')} /></li>
                             <li className='li'>密&nbsp;&nbsp;&nbsp;码：<input type="text" onChange={(e) => this.changeUser(e, 'password')} /></li>
                         </ul>
-                        <Link to='/login' className='btn' onClick={() => this.toLogin()}>注册</Link>
+                        <a className='btn' onClick={() => this.toLogin()}>注册</a>
                     </div>
 
                 </div>

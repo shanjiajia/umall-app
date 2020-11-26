@@ -93,4 +93,32 @@ export const reqCarAdd=(form)=>{
         data:qs.stringify(form)
     })
 }
+//购物车列表
+export const reqCarList=(uid)=>{
+    return axios({
+        url:'/api/cartlist',
+        method:'get',
+        params:{
+            uid:uid
+        }
+    })
+}
+//删除购物车
+export const reqCarDel=(id)=>{
+    return axios({
+        url:'/api/cartdelete',
+        method:'post',
+        data:qs.stringify({
+            id:id
+        })
+    })
+}
+//购物车修改
+export const reqCarEdit=(json)=>{
+    return axios({
+        url:'/api/cartedit',
+        method:'post',
+        data:qs.stringify(json)
+    })
+}
 

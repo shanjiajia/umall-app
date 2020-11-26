@@ -1,16 +1,26 @@
 @import('../../stylus/index.styl')
-.register
-    height 100vh
-    .register-main 
-        position relative
-        width 100%
-        height 100%
-        .auto
-            position absolute
-            left 50%
-            top 50%
-            transform translate(-50%,-50%)
-            width $width
-            .li
-                padding $padding
+.register{
+    .register-main{
+        .auto{
+            padding 0 $margin*5
+            margin-top $margin*10
+            ul{
+                li{
+                    padding $padding
+                    margin: $margin
+                    border-bottom $borderwidth solid $font-color1
+                    line-height $margin*4
+                    input{
+                        border none
+                        opacity 0
+                    }
+                }
+            }
+            .btn{
+                margin-top $margin*2
+                width: 90%;
+            }
+        }
+    }
+}
 

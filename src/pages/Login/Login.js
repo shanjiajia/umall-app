@@ -39,6 +39,7 @@ export default class Login extends Component {
                         <li className='li'><span>账号：</span><input type="text" onChange={(e) => this.changeUser(e, 'phone')} /></li>
                         <li className='li'><span>密码：</span><input type="text" onChange={(e) => this.changeUser(e, 'password')} /></li>
                     </ul>
+                    <a className='mima'>忘记密码</a>
                     <a className='btn' onClick={() => this.toIndex()}>登录</a>
                 </div>
             </div>

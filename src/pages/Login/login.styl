@@ -1,7 +1,26 @@
 @import('../../stylus/index.styl');
-.login
-    .login-main 
-        margin 2rem 0 0 1.5rem
-        .li 
-            padding $padding
-            margin: $margin
+.login{
+    .login-main{
+        padding 0 $margin*5
+        margin-top $margin*10
+        ul{
+            li{
+                padding $padding
+                margin: $margin
+                border-bottom $borderwidth solid $font-color1
+                line-height $margin*4
+                input{
+                    border none
+                    opacity 0 
+                }
+            }
+        }
+        .mima{
+            margin-left $margin*19
+        }
+        .btn{
+            margin-top $margin*2
+            width: 90%;
+        }
+    }
+}

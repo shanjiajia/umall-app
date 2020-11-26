@@ -18,6 +18,7 @@ import "./assets/js/rem"
 // 6.store 
 
 // 7.UI 框架
+import 'antd-mobile/dist/antd-mobile.css';
 
 // 8.stylus 样式
 import {HashRouter} from 'react-router-dom';
